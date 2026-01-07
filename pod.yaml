@@ -9,6 +9,7 @@ spec:
   containers:
     - name: debug 
       image: quay.io/coulof/isi_sdk_debug:latest
+      imagePullPolicy: Always
       command: ["/bin/bash", "-c", "echo Hello from OpenShift && sleep 3600"]
       resources:
         requests:
